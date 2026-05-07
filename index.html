@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enzo Platform — Golden Ear Spatial Audio</title>
+  <meta name="description" content="A premium simulated mockup for Enzo, an 18-year-old Spatial Audio producer from Luanda, Angola." />
+  <meta property="og:title" content="Enzo Platform — A Golden Ear at 18" />
+  <meta property="og:description" content="Narrative showcase, simulated Vault, booking, owner dashboard, and simulated Golder Hear AI concierge." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" data-elevate>
+    <a class="brand" href="#hero" aria-label="Enzo Platform home">
+      <img src="assets/golder-hear.svg" alt="" class="brand__avatar" />
+      <span>Enzo<span class="gold"> Platform</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+      <a href="#showcase">Showcase</a>
+      <a href="#vault">Vault</a>
+      <a href="#booking">Booking</a>
+      <a href="#owner">Owner</a>
+      <button class="button button--ghost chat-open" type="button">Ask Golder Hear</button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="hero" class="hero" aria-labelledby="hero-title">
+      <div class="video-placeholder" aria-hidden="true">
+        <div class="video-placeholder__orb video-placeholder__orb--one"></div>
+        <div class="video-placeholder__orb video-placeholder__orb--two"></div>
+        <div class="scanline"></div>
+      </div>
+      <div class="hero__grid container">
+        <div class="hero__character reveal in-view">
+          <img src="assets/golder-hear.svg" alt="Golder Hear mascot with one ear up and one relaxed" />
+          <div class="hero__signal">
+            <span>Listening score</span>
+            <strong>IELTS 9.0</strong>
+          </div>
+        </div>
+        <div class="hero__copy reveal in-view">
+          <p class="eyebrow">Luanda → global spatial sound</p>
+          <h1 id="hero-title">A Golden Ear at 18.</h1>
+          <p class="hero__subhead">Enzo turns a perfect listening credential into immersive, 3D-panned music built for artists, headphones, rooms, and the next frontier of audio.</p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#showcase">Hear the journey</a>
+            <button class="button button--secondary" type="button" data-audio-demo>Start audio demo</button>
+          </div>
+          <div class="visualiser visualiser--hero" data-visualiser aria-label="Audio visualiser showing Golden Ear signal">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="showcase" class="section showcase" aria-labelledby="showcase-title">
+      <div class="container showcase__intro reveal">
+        <p class="eyebrow">Pillar I — Narrative Showcase</p>
+        <h2 id="showcase-title">From stereo roots to sound that surrounds.</h2>
+        <p>Tracks are curated as a scroll journey, not a playlist. Start with bedroom textures. End where headphones become theatres.</p>
+      </div>
+      <div class="track-journey container" data-track-list></div>
+      <div class="audio-dock" aria-live="polite">
+        <div>
+          <span class="eyebrow">Now listening</span>
+          <strong data-now-title>Choose a track</strong>
+        </div>
+        <div class="visualiser visualiser--dock" data-visualiser-small></div>
+      </div>
+    </section>
+
+    <section id="vault" class="section vault" aria-labelledby="vault-title">
+      <div class="container vault__shell" data-vault-shell>
+        <div class="vault__seal-wrap reveal">
+          <img src="assets/vault-seal.svg" alt="Golden circular vault seal with Golder Hear and lock" class="vault__seal" />
+        </div>
+        <div class="vault__content reveal" data-vault-content>
+          <p class="eyebrow">Pillar III — Simulated Gated Commerce</p>
+          <h2 id="vault-title">The Vault</h2>
+          <p>Exclusive spatial masters, beat packs, licensing options, and session access. This checkout is theatre: no Stripe, no payment library, no real charge.</p>
+          <button class="button button--vault" type="button" data-unlock-vault>Unlock The Vault</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="booking" class="section booking" aria-labelledby="booking-title">
+      <div class="container booking__grid">
+        <div class="reveal">
+          <p class="eyebrow">Session booking — simulated</p>
+          <h2 id="booking-title">Book a spatial production conversation.</h2>
+          <p>Tell Enzo what you are building. The form renders a premium success state only; no backend is contacted.</p>
+        </div>
+        <form class="booking-form reveal" data-booking-form>
+          <label>Name<input required name="name" autocomplete="name" placeholder="Artist or manager name" /></label>
+          <label>Email<input required type="email" name="email" autocomplete="email" placeholder="you@example.com" /></label>
+          <label>Session type<select name="type"><option>Remote spatial mix review</option><option>FL Studio 3D panning session</option><option>Licensing conversation</option></select></label>
+          <label>Project notes<textarea name="notes" rows="4" placeholder="What should the Golden Ear listen for?"></textarea></label>
+          <button class="button button--primary" type="submit">Request session</button>
+          <p class="form-toast" data-booking-toast role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="owner" class="section owner" aria-labelledby="owner-title">
+      <div class="container owner__grid">
+        <div class="owner-login reveal" data-owner-login>
+          <p class="eyebrow">Enzo private area — simulated auth</p>
+          <h2 id="owner-title">Owner Login</h2>
+          <p>Password is hardcoded for the mockup. Try <code>golden-ear-9</code>.</p>
+          <form data-owner-form>
+            <label>Password<input type="password" name="password" autocomplete="current-password" placeholder="golden-ear-9" /></label>
+            <button class="button button--secondary" type="submit">Enter dashboard</button>
+            <p class="form-toast" data-owner-toast role="status" aria-live="polite"></p>
+          </form>
+        </div>
+        <div class="owner-dashboard reveal" data-owner-dashboard hidden>
+          <div class="dashboard-head">
+            <div>
+              <p class="eyebrow">Mock analytics</p>
+              <h2>Golden Ear command room</h2>
+            </div>
+            <button class="button button--ghost" type="button" data-owner-logout>Log out</button>
+          </div>
+          <div class="analytics-grid" data-analytics-grid></div>
+          <details class="vault-manager" open>
+            <summary>Vault manager — display only</summary>
+            <div data-owner-vault-list></div>
+          </details>
+          <div class="companion-card">
+            <h3>Private AI Companion</h3>
+            <p data-companion-output>The week is pointing toward spatial credibility: visitors are not just browsing; they are asking technical questions, unlocking the Vault, and treating Enzo like a peer.</p>
+            <button class="button button--vault" type="button" data-companion-brief>Generate simulated briefing</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <aside class="chat" data-chat hidden aria-label="Simulated Golder Hear conversational studio">
+    <div class="chat__panel">
+      <header class="chat__header">
+        <img src="assets/golder-hear.svg" alt="" />
+        <div><strong data-chat-title>Golder Hear Concierge</strong><span>Simulated AI layer</span></div>
+        <button class="chat__close" type="button" data-chat-close aria-label="Close chat">×</button>
+      </header>
+      <div class="mode-toggle" role="group" aria-label="Chat mode">
+        <button type="button" class="is-active" data-mode="concierge">Concierge</button>
+        <button type="button" data-mode="coproducer">Co-Producer</button>
+      </div>
+      <div class="chat__messages" data-chat-messages aria-live="polite"></div>
+      <form class="chat__form" data-chat-form>
+        <input name="message" autocomplete="off" placeholder="Ask about Enzo, tracks, FL Studio, or the Vault…" />
+        <button class="button button--primary" type="submit">Send</button>
+      </form>
+    </div>
+  </aside>
+
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div><strong>Enzo Platform</strong><p>High-fidelity static HTML mockup. Real theatre; simulated commerce, auth, analytics, and AI.</p></div>
+      <div><span>Golder Hear</span><p>One ear up. One relaxed. Always listening.</p></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
