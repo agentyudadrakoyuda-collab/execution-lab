@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title id="title">Golder Hear</title><desc id="desc">Geometric dog mascot with one pointed ear up and one relaxed floppy ear.</desc>
+  <defs><radialGradient id="gold" cx="35%" cy="25%" r="80%"><stop offset="0" stop-color="#FFE8A6"/><stop offset=".52" stop-color="#D4AF37"/><stop offset="1" stop-color="#8B6B12"/></radialGradient><filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <circle cx="120" cy="124" r="88" fill="#111" stroke="#D4AF37" stroke-width="6"/>
+  <path d="M74 67 96 14l25 64" fill="url(#gold)" stroke="#F4D77B" stroke-width="5" stroke-linejoin="round" filter="url(#glow)"/>
+  <path d="M160 72c35 8 52 32 36 62-11 20-34 24-50 9 15-13 21-38 14-71Z" fill="#5D4310" stroke="#D4AF37" stroke-width="5" stroke-linejoin="round"/>
+  <circle cx="120" cy="132" r="62" fill="url(#gold)"/>
+  <path d="M85 122c14-13 28-13 42 0" fill="none" stroke="#19130A" stroke-width="7" stroke-linecap="round"/>
+  <path d="M150 122c9-8 18-8 27 0" fill="none" stroke="#19130A" stroke-width="7" stroke-linecap="round"/>
+  <path d="M119 143 107 158h26z" fill="#17100A"/>
+  <path d="M100 174c18 13 39 13 58 0" fill="none" stroke="#17100A" stroke-width="7" stroke-linecap="round"/>
+  <path d="M43 196c44 29 112 30 157-1" fill="none" stroke="#D4AF37" stroke-width="4" stroke-linecap="round" opacity=".7"/>
+</svg>
